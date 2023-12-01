@@ -68,11 +68,11 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ## If system doesn't run
 
 Run in terminal:
- #npm install
- #npm audit fix
- #composer install
- #composer update
- #npm run dev
+- npm install
+- npm audit fix
+- composer install
+- composer update
+- npm run dev
 
 Run in another terminal
- #php artisan serve
+- php artisan serve
