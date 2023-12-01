@@ -3,7 +3,7 @@
         'name' => 'laravel/laravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'c794859d7782e95185f007d6fd9e058a8509dc5d',
+        'reference' => '5a476eff8b8ffee8db857bba5c31507a33419993',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -373,7 +373,7 @@
         'laravel/laravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'c794859d7782e95185f007d6fd9e058a8509dc5d',
+            'reference' => '5a476eff8b8ffee8db857bba5c31507a33419993',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -647,9 +647,9 @@
             'dev_requirement' => true,
         ),
         'phpunit/phpunit' => array(
-            'pretty_version' => '10.4.2',
-            'version' => '10.4.2.0',
-            'reference' => 'cacd8b9dd224efa8eb28beb69004126c7ca1a1a1',
+            'pretty_version' => '10.5.0',
+            'version' => '10.5.0.0',
+            'reference' => '80cab181aebc2efac422940443e28db556137637',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpunit/phpunit',
             'aliases' => array(),
@@ -757,8 +757,8 @@
         'psr/log-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0|2.0|3.0',
-                1 => '3.0.0',
+                0 => '3.0.0',
+                1 => '1.0|2.0|3.0',
             ),
         ),
         'psr/simple-cache' => array(
