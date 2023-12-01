@@ -1,0 +1,258 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+body {
+  overflow-x: hidden
+}
+
+.big {
+    font-size: 3em;
+}
+
+.brand-list {
+    list-style-type: none;
+    margin-left: 0px;
+    width: 75%;
+    background-color: #485157;
+    padding: 10px 5px;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    box-shadow: 1px 2px #31383c;
+}
+
+.brand-anchor {
+    text-decoration: none;
+    color: #F9F9F9;
+    cursor: pointer
+}
+
+.brand-anchor:hover {
+    color: #FFFFFF;
+}
+
+.brand-list:hover {
+    background-color: #2c3236;
+}
+
+.dashboard {
+    background-image: url("../images/bg2.jpg");
+    // background-image: url({{url('images/bg.jpg')}});
+    height: 100px;
+    background-color: #cccccc;
+}
+
+.text-sriracha {
+    font-family: 'Sriracha', cursive;
+}
+
+.text-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.fight-btn {
+    background-color: #D3561C;
+    padding: 10px 40px;
+    border-radius: 50px;
+    border: 0px;
+    font-size: 1.5em
+}
+
+.fight-btn:hover {
+    background-color: #963f16;
+    color: #DDDDDD
+}
+
+.pseudo-link {
+    color: #0D6DFD;
+    cursor: pointer;
+}
+
+.page-link {
+    cursor: pointer;
+}
+
+.shoe-review-link {
+  color: #D3561C;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.shoe-review-link:hover {
+  font-weight: 600;
+  color: #D3561C;
+}
+
+.shoe-comparison-list {
+    border: 1px solid #CBCBCB;
+    text-decoration: none;
+    border-radius: 10px;
+    color: #D3561C
+}
+
+.shoe-comparison-list:hover {
+    color: #953b11;
+    font-weight: 600
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.reviews-hr {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    width: 30px;
+    margin: auto;
+    border: 1.5px solid black !important;
+}
+
+.mtb-05 {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.5rem !important
+}
+
+.review-block {
+    background-color: white;
+    border-radius: 5px
+}
+
+.sub-text {
+    color: #666666;
+    font-size: 0.9em
+}
+
+.orange {
+    color: #D3561C;
+}
+
+.range-slider {
+    width: 100%;
+    // margin: auto;
+    // text-align: center;
+    position: relative;
+    height: 6em;
+  }
+  
+  .range-slider input[type=range] {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  input[type=number] {
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 1.6em;
+    -moz-appearance: textfield;
+  }
+  
+  input[type=number]::-webkit-outer-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  
+  // input[type=number]:invalid,
+  // input[type=number]:out-of-range {
+  //   border: 2px solid #ff6347;
+  // }
+  
+  input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+  }
+  
+  input[type=range]:focus {
+    outline: none;
+  }
+  
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #2497e3;
+  }
+  
+  input[type=range]:focus::-ms-fill-lower {
+    background: #2497e3;
+  }
+  
+  input[type=range]:focus::-ms-fill-upper {
+    background: #2497e3;
+  }
+  
+  input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 5px;
+    cursor: pointer;
+    animate: 0.2s;
+    background: #2497e3;
+    border-radius: 1px;
+    box-shadow: none;
+    border: 0;
+  }
+  
+  input[type=range]::-webkit-slider-thumb {
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px 0px 0px #000;
+    border: 1px solid #2497e3;
+    height: 18px;
+    width: 18px;
+    border-radius: 25px;
+    background: #a1d0ff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -7px;
+  }
+
+  .sidebar {
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+  }
+
+  .min-height {
+    max-height: calc(110vh - 9rem);
+  }
+
+  .gray {
+    color: gray;
+  }
+
+  .margin-sold {
+    margin: 0px 3px 0px 5px
+  }
+
+  .brand-logo {
+    height: 60px;
+    width: 80px;
+    float: right;
+  }
+
+  .brand-logo-lv {
+    height: 60px;
+    width: 60px;
+    float: right;
+  }
+
+  .brand-logo-nike {
+    height: 50px;
+    width: 80px;
+    float: right;
+  }
+
+  .brand-logo-timberland {
+    height: 100px;
+    width: 120px;
+    float: right;
+  }
+
+  .brand-logo-width {
+    height: 50px;
+    width: 120px;
+    float: right;
+  }
+  
