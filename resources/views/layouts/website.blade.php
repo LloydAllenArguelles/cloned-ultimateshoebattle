@@ -42,6 +42,9 @@
                         <li class="nav-item">
                             <a class="nav-link @route('main') active-nav @endif" aria-current="page" href="{{ route('main') }}">Sneakers</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link @route('comparison') active-nav @endif" href="{{ route('comparison') }}">Comparison</a>
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle @route('most-in-demand') active-nav @elseroute('whats-hot') active-nav @endif" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Discover
