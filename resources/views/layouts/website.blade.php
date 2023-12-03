@@ -28,7 +28,7 @@
         <div id='app'>
             <nav class="navbar navbar-expand-lg navbar-light bg-light @route('dashboard') d-none @endif">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="{{ route('main') }}">
+                    <a class="navbar-brand" href="{{ route('home') }}">
                         <img src="images/favicon.png" alt="" width="60" height="50">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,10 +37,10 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link @route('main') active-nav @endif" aria-current="page" href="{{ route('main') }}">Home</a>
+                           <a class="nav-link @route('home') active-nav @endif" aria-current="page" href="{{ route('home') }}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @route('comparison') active-nav @endif" href="{{ route('comparison') }}">Comparison</a>
+                            <a class="nav-link @route('main') active-nav @endif" aria-current="page" href="{{ route('main') }}">Sneakers</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle @route('most-in-demand') active-nav @elseroute('whats-hot') active-nav @endif" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
