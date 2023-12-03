@@ -102,12 +102,6 @@
     </div>    
 </div>
 
-
-
-
-
-
-
 <!---Shoe Description Area-->
     <div class="grid-container">
             <div class="grid-row">
@@ -123,8 +117,18 @@
                 </div>
             </div>
     </div>
+
+    <div class="bottom-color">
+    <ul style="list-style-type: none" class="bottom">
+        <li>
+            <a>All rights reserved</a>
+        </li>
+        <li>
+            <a>All rights reserved</a>
+        </li>
+    </ul>
+</div>
 <!--End-->    
 </div>
-
 
 </template>
