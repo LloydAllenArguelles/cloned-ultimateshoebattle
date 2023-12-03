@@ -12,6 +12,7 @@ app.use(VueApexCharts)
 
 //Website
 import Index from "./components/website/index.vue";
+import Home from "./components/website/home.vue";
 import Landing from "./components/website/landing.vue";
 import Comparison from "./components/website/comparison.vue";
 import InDemand from "./components/website/in-demand.vue";
@@ -20,6 +21,7 @@ import Reviews from "./components/website/reviews.vue";
 import Stats from "./components/website/stats.vue";
 
 app.component("index", Index);
+app.component("home", Home);
 app.component("landing", Landing);
 app.component("comparison", Comparison);
 app.component("inDemand", InDemand);
