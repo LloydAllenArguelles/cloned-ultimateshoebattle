@@ -13,7 +13,10 @@ class WebsiteController extends Controller
     public function main() {
         return view('pages.website.landing');
     }
-
+    
+    public function home() {
+        return view('pages.website.home');
+    }
     public function comparison() {
         return view('pages.website.comparison');
     }
