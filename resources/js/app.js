@@ -35,9 +35,15 @@ const darkToggle = document.getElementById('darkToggle');
 
 darkToggle.addEventListener('change',function(){
     console.log('Toggle changed:', this.checked);
+
+    const elementDarkToggle = document.querySelectorAll('.navbar-bg');
     if (this.checked){
         console.log('Dark mode enabled');
+        elementDarkToggle.forEach(element => {element.style.backgroundColor = 'rgb(47, 47, 47)'}
+            )
     } else {
         console.log('Dark mode disabled');
+        elementDarkToggle.forEach(element => {element.style.backgroundColor = 'gainsboro'}
+            )
     }
 });
