@@ -4516,6 +4516,7 @@ input[type=button].btn-block {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease;
 }
 
 .navbar .container,
@@ -11342,7 +11343,6 @@ font-family: Cooper BT,serif;
   
   .welcome-button:hover {
     text-decoration: none;
-    text-
   }
   
   .welcome-button:active {
