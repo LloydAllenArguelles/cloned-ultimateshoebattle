@@ -4438,7 +4438,7 @@ input[type=button].btn-block {
 }
 
 .nav-link.disabled {
-  color: red;
+  color: #6c757d;
   pointer-events: none;
   cursor: default;
 }
@@ -11342,7 +11342,6 @@ font-family: Cooper BT,serif;
   
   .welcome-button:hover {
     text-decoration: none;
-    text-
   }
   
   .welcome-button:active {
