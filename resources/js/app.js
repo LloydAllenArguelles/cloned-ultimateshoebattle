@@ -31,19 +31,38 @@ app.component("stats", Stats);
 
 app.mount('#app');
 
-const darkToggle = document.getElementById('darkToggle');
-
-darkToggle.addEventListener('change',function(){
-    console.log('Toggle changed:', this.checked);
-
-    const elementDarkToggle = document.querySelectorAll('.navbar-bg');
-    if (this.checked){
-        console.log('Dark mode enabled');
-        elementDarkToggle.forEach(element => {element.style.backgroundColor = 'rgb(47, 47, 47)'}
-            )
+function setDarkMode(isDarkMode) {
+    const elementDarkToggle = document.querySelectorAll('.navbar-bg, .nav-text');
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        elementDarkToggle.forEach(element => {
+            element.style.backgroundColor = 'rgb(47, 47, 47)';
+        });
     } else {
-        console.log('Dark mode disabled');
-        elementDarkToggle.forEach(element => {element.style.backgroundColor = 'gainsboro'}
-            )
+        document.body.classList.remove('dark-mode');
+        elementDarkToggle.forEach(element => {
+            element.style.backgroundColor = 'gainsboro';
+        });
+    }
+    // Store the dark mode preference in local storage
+    localStorage.setItem('darkMode', isDarkMode);
+}
+
+// Function to toggle dark mode
+function toggleDarkMode() {
+    const darkToggle = document.getElementById('darkToggle');
+    const isDarkMode = darkToggle.checked;
+    setDarkMode(isDarkMode);
+}
+
+// Check for stored dark mode preference on page load
+document.addEventListener('DOMContentLoaded', function() {
+    const darkToggle = document.getElementById('darkToggle');
+    darkToggle.addEventListener('change', toggleDarkMode);
+
+    const storedDarkMode = localStorage.getItem('darkMode');
+    if (storedDarkMode === 'true') {
+        darkToggle.checked = true;
+        setDarkMode(true);
     }
 });

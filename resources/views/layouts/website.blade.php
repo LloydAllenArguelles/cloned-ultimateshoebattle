@@ -37,7 +37,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
-                           <a class="nav-link @route('home') active-nav @endif nav-text" aria-current="page" href="{{ route('home') }}">Home</a>
+                           <a class=" @route('home') active-nav @endif nav-text" aria-current="page" href="{{ route('home') }}">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link @route('main') active-nav @endif" aria-current="page" href="{{ route('main') }}">Sneakers</a>
