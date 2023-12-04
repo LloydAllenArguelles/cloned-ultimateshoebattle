@@ -31,3 +31,31 @@ app.component("stats", Stats);
 
 app.mount('#app');
 
+document.addEventListener('DOMContentLoaded', function() {
+    const darkToggle = document.getElementById('darkMode-button');
+    const navElement = document.getElementById('darkMode-toggle');
+
+    function setDarkMode(isDarkMode) {
+        if (isDarkMode) {
+            navElement.classList.remove('bg-light','navbar-light');
+            navElement.classList.add('bg-dark','navbar-dark');
+        } else {
+            navElement.classList.remove('bg-dark','navbar-dark');
+            navElement.classList.add('bg-light','navbar-light');
+        }
+
+        // Store the dark mode preference in localStorage
+        localStorage.setItem('darkMode', isDarkMode.toString());
+    }
+
+    // Retrieve the stored dark mode preference from localStorage
+    const storedDarkMode = localStorage.getItem('darkMode');
+    if (storedDarkMode === 'true') {
+        darkToggle.checked = true;
+        setDarkMode(true);
+    }
+
+    darkToggle.addEventListener('change', function() {
+        setDarkMode(darkToggle.checked);
+    });
+});

@@ -29,7 +29,7 @@
     </head>
     <body>
         <div id='app'>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light @route('dashboard') d-none @endif">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light @route('dashboard') d-none @endif" id="darkMode-toggle">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="{{ route('home') }}">
                         <img src="images/favicon.png" alt="" width="60" height="50">
@@ -59,6 +59,12 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link @route('reviews') active-nav @endif" href="{{ route('reviews') }}">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <label class="switch">
+                                <input type="checkbox" id="darkMode-button">
+                                <span class="darkMode-toggle-button"></span>
+                            </label>
                         </li>
                     </ul>
                     </div>
