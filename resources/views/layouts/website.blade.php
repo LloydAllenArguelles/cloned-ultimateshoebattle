@@ -54,6 +54,13 @@
                         <li class="nav-item">
                             <a class="nav-link @route('reviews') active-nav @endif" href="{{ route('reviews') }}">Reviews</a>
                         </li>
+                        <li class="nav-item">
+                           <label class="switch">
+                                <input type="checkbox" id="darkToggle">
+                                <span class="darkToggle-button"></span>
+                            </label>
+                        </li>
+                        
                     </ul>
                     </div>
                 </div>

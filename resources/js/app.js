@@ -31,3 +31,13 @@ app.component("stats", Stats);
 
 app.mount('#app');
 
+const darkToggle = document.getElementById('darkToggle');
+
+darkToggle.addEventListener('change',function(){
+    console.log('Toggle changed:', this.checked);
+    if (this.checked){
+        console.log('Dark mode enabled');
+    } else {
+        console.log('Dark mode disabled');
+    }
+});
