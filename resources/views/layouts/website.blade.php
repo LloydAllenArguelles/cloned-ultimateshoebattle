@@ -22,6 +22,9 @@
                 /* background-color: #FE9D02 !important; */
                 background-color: #EEEEEE !important;
             }
+            .container-fluid a{
+                padding: 0 50px
+            }
         </style>
     </head>
     <body>
