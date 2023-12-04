@@ -37,11 +37,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function setDarkMode(isDarkMode) {
         if (isDarkMode) {
-            navElement.classList.remove('bg-light');
-            navElement.classList.add('bg-dark');
+            navElement.classList.remove('bg-light','navbar-light');
+            navElement.classList.add('bg-dark','navbar-dark');
         } else {
-            navElement.classList.remove('bg-dark');
-            navElement.classList.add('bg-light');
+            navElement.classList.remove('bg-dark','navbar-dark');
+            navElement.classList.add('bg-light','navbar-light');
         }
 
         // Store the dark mode preference in localStorage
