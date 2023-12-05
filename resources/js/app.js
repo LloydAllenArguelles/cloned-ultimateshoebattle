@@ -34,17 +34,14 @@ app.mount('#app');
 document.addEventListener('DOMContentLoaded', function() {
     const darkToggle = document.getElementById('darkMode-button');
     const navElement = document.getElementById('darkMode-toggle');
-    const bgElement = document.body;
 
     function setDarkMode(isDarkMode) {
         if (isDarkMode) {
             navElement.classList.remove('bg-light','navbar-light');
             navElement.classList.add('bg-dark','navbar-dark');
-            bgElement.classList.add('body-color');
         } else {
             navElement.classList.remove('bg-dark','navbar-dark');
             navElement.classList.add('bg-light','navbar-light');
-            bgElement.classList.remove('body-color');
         }
 
         // Store the dark mode preference in localStorage

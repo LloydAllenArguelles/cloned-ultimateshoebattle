@@ -279,6 +279,7 @@ body {
     height: 24px;
     background-color: gray;
     border-radius:20px;
+    float: right;
     margin-left: 15px;
   }
 
@@ -323,9 +324,4 @@ body {
   input:checked+.darkMode-toggle-button:before {
     transform:translateX(26px);
     background-color: white;
-  }
-
-  .body-color{
-    background-color: #212529;
-    transition: .4s ease;
   }
