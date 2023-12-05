@@ -25,9 +25,17 @@
             .container-fluid a{
                 padding: 0 50px
             }
+
+            .black-bar {
+            background-color: #000;
+            height: 20px; 
+            width: 100%; 
+            }
+
         </style>
     </head>
     <body class="bg-light darkMode-tog">
+    <div class="black-bar"></div>
         <div id='app'>
             <nav style="border-bottom: 2px solid #FAF9F8" class="navbar navbar-expand-lg navbar-light bg-light @route('dashboard') d-none @endif darkMode-tog">
                 <div class="container-fluid">
@@ -38,7 +46,7 @@
                     <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto me-0 mb-2 mb-lg-0">
                         <li class="nav-item">
                            <a class="nav-link @route('home') active-nav @endif" aria-current="page" href="{{ route('home') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="View Home Page">Home</a>
                         </li>
