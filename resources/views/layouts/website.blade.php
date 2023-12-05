@@ -20,7 +20,7 @@
             }
             body {
                 /* background-color: #FE9D02 !important; */
-                background-color: #EEEEEE !important;
+                /*background-color: #EEEEEE !important; */
             }
             .container-fluid a{
                 padding: 0 50px
@@ -29,7 +29,7 @@
     </head>
     <body>
         <div id='app'>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light @route('dashboard') d-none @endif" id="darkMode-toggle">
+            <nav style="border-bottom: 2px solid white" class="navbar navbar-expand-lg navbar-light bg-light @route('dashboard') d-none @endif" id="darkMode-toggle">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="{{ route('home') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ultimate Shoe Battle">
                         <img src="images/favicon.png" alt="" width="60" height="50">
@@ -61,7 +61,7 @@
                             <a class="nav-link @route('reviews') active-nav @endif" href="{{ route('reviews') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Check Web Reviews">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <label class="switch" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dark Mode">
+                            <label class="switch">
                                 <input type="checkbox" id="darkMode-button">
                                 <span class="darkMode-toggle-button"></span>
                             </label>
