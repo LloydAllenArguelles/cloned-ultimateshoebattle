@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-2 pr-0 sidebar" id="sidebar-scroll" style="background-color: #616161;">
+    <div class="col-md-2 pr-0 sidebar rightbar-light darkMode-tog-c" id="sidebar-scroll">
         <div class="text-center">
             <h2 class="mt-5 mb-4" style="color: white">Shoe Brands</h2>
             <ul class="mb-5 pl-0 pr-0">
@@ -12,8 +12,8 @@
         </div>
     </div>
     <div class="col-md-10" id="go-here">
-        <div class="card mt-2 mr-2">
-            <div class="card-header p-4">
+        <div class="card mt-2 mr-2 page-light darkMode-tog-p">
+            <div class="card-header p-4 text-c">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-8">
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </div>
-        <div class="pl-4 pr-4 pt-3 pb-2">
+        <div class="pl-4 pr-4 pt-3 pb-2 text-c">
             <input class="form-check-input" type="checkbox" value="show" v-model="show_price_range">
             <label class="form-check-label ml-3 mb-2" for="flexCheckDefault">
                 Price Range
@@ -52,7 +52,7 @@
                 <button @click="searchSpecific(0, false, true)" type="button" class="btn btn-warning ml-4"> Search </button>
             </div>
         </div>
-        <div class="card mt-2 mr-2">
+        <div class="page-light card mt-2 mr-2 darkMode-tog-p">
             <div class="card-body p-3 pt-2">
                 <div class="row">
                     <div class="col-md-3 mt-4" v-for="(shoe, index) in shoe_list" :key="index">

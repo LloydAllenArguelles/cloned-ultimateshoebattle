@@ -33,7 +33,9 @@ app.mount('#app');
 
 document.addEventListener('DOMContentLoaded', function() {
     const darkToggle = document.getElementById('darkMode-button');
-    const darkToggles = document.querySelectorAll('.darkMode-toggle');
+    const darkToggles = document.querySelectorAll('.darkMode-tog');
+    const darkCustom = document.querySelectorAll('.darkMode-tog-c');
+    const darkPage = document.querySelectorAll('.darkMode-tog-p');
 
     function setDarkMode(isDarkMode) {
         darkToggles.forEach(navElement => {
@@ -43,6 +45,24 @@ document.addEventListener('DOMContentLoaded', function() {
             } else {
                 navElement.classList.remove('bg-dark', 'navbar-dark');
                 navElement.classList.add('bg-light', 'navbar-light');
+            }
+        });
+        darkCustom.forEach(navElement => {
+            if (isDarkMode) {
+                navElement.classList.remove('rightbar-light');
+                navElement.classList.add('rightbar-dark');
+            } else {
+                navElement.classList.remove('rightbar-dark');
+                navElement.classList.add('rightbar-light');
+            }
+        });
+        darkPage.forEach(navElement => {
+            if (isDarkMode) {
+                navElement.classList.remove('page-light');
+                navElement.classList.add('page-dark');
+            } else {
+                navElement.classList.remove('page-dark');
+                navElement.classList.add('page-light');
             }
         });
 

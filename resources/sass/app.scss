@@ -288,7 +288,7 @@ body {
     height: 0;
   }
 
-  .darkMode-toggle-button{
+  .darkMode-tog-button{
     position: absolute;
     cursor: pointer;
     height: 0;
@@ -300,7 +300,7 @@ body {
     border-radius: 34px;
   }
 
-  .darkMode-toggle-button:before{
+  .darkMode-tog-button:before{
     position: absolute;
     content: '';
     height: 16px;
@@ -312,15 +312,15 @@ body {
     border-radius: 50%;
   }
 
-  input:checked+.darkMode-toggle-button {
+  input:checked+.darkMode-tog-button {
     background-color: green;
   }
 
-  input:focus+.darkMode-toggle-button{
+  input:focus+.darkMode-tog-button{
     box-shadow: 0 0 1000px #953b11;
   }
 
-  input:checked+.darkMode-toggle-button:before {
+  input:checked+.darkMode-tog-button:before {
     transform:translateX(26px);
     background-color: black;
   }
@@ -329,7 +329,50 @@ body {
     background-color: #212529;
     transition: .4s ease;
   }
-
-  .darkMode-toggle{
+  //just transitions
+  .darkMode-tog{
     transition: background-color 0.3s ease;
+  }
+  .darkMode-tog-c{
+    transition: background-color 0.3s ease;
+  }
+  .darkMode-tog-p{
+    transition: background-color 0.3s ease;
+  }
+  //brand bar on the right
+  .rightbar-light{
+    background-color: #8e8e8e;
+    border-right: 2px solid #FAF9F8;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .rightbar-dark{
+    background-color: #3b3b3b;
+    border-right: 2px solid #FAF9F8;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  //Changes color of the thingy of search box and catalog area
+  .page-light{
+    background-color: #FAF9F8;
+    padding:1px;
+    color: black;
+  }
+  .page-dark{
+    background-color: #3b3b3b;
+    border: 2px solid #FAF9F8;
+  }
+  //Changes text color if element has text-c class and is in darkMode-tog-p
+  .page-dark .text-c {
+    color:#FAF9F8;
+  }
+  .page-light .text-c {
+    color:#3b3b3b;
+  }
+
+  .bg-dark .text-c {
+    color:#FAF9F8;
+  }
+  .bg-light .text-c {
+    color:#3b3b3b;
   }

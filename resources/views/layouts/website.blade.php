@@ -27,9 +27,9 @@
             }
         </style>
     </head>
-    <body class="bg-light darkMode-toggle">
+    <body class="bg-light darkMode-tog">
         <div id='app'>
-            <nav style="border-bottom: 2px solid #FAF9F8" class="navbar navbar-expand-lg navbar-light bg-light @route('dashboard') d-none @endif darkMode-toggle">
+            <nav style="border-bottom: 2px solid #FAF9F8" class="navbar navbar-expand-lg navbar-light bg-light @route('dashboard') d-none @endif darkMode-tog">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="{{ route('home') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ultimate Shoe Battle">
                         <img src="images/favicon.png" alt="" width="60" height="50">
@@ -63,7 +63,7 @@
                         <li class="nav-item">
                             <label class="switch">
                                 <input type="checkbox" id="darkMode-button">
-                                <span class="darkMode-toggle-button"></span>
+                                <span class="darkMode-tog-button"></span>
                             </label>
                         </li>
                     </ul>

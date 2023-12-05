@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-2 pr-0" style="background-color: #616161;">
+    <div class="col-md-2 pr-0 rightbar-light darkMode-tog-c">
         <div class="text-center">
             <h2 class="mt-5 mb-4" style="color: white">Shoe Brands</h2>
             <ul class="mb-5 pl-0 pr-0">
@@ -11,13 +11,13 @@
             </ul>
         </div>
     </div>
-    <div class="col-md-10">
-        <div class="card mt-2 mr-2">
+    <div class="col-md-10 darkMode-tog">
+        <div class="card mt-2 mr-2 page-light darkMode-tog-p">
             <div class="card-header p-4">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-8 d-flex align-items-center">
-                            <h3 class="mb-0 mr-3 font-weight-bold text-roboto"> Pick your fighter </h3>
+                            <h3 class="mb-0 mr-3 font-weight-bold text-roboto text-c"> Pick your fighter </h3>
                             <button v-if="count_num >= 3" @click="seeMore()" id="compare-shoe-btn" data-bs-toggle="modal" data-bs-target="#compareShoe" type="button" class="btn btn-danger"> FIGHT! </button>
                         </div>
                         <div class="col-md-3">
@@ -32,7 +32,7 @@
             </div>
         </div>
         <div class="mt-3 mb-3 container-fluid" id="go-here-comparison">
-            <div class="row" >
+            <div class="row">
                 <div class="col-md-4" v-for="(num, index) in count_loop" :key="index">
                     <div v-if="num+1 == 2" class="p-2 mr-2 shoe-comparison-list"> {{ firstLetterUp(shoe_1.shoeName) }}<span style="float:right; cursor: pointer" @click="removeShoe(num+1)"> X </span></div>
                     <div v-else-if="num+1 == 3" class="p-2 mr-2 shoe-comparison-list"> {{ firstLetterUp(shoe_2.shoeName) }} <span style="float:right; cursor: pointer" @click="removeShoe(num+1)"> X </span></div>
@@ -40,7 +40,7 @@
                 </div>
             </div>
         </div>
-        <div class="card mt-2 mr-2">
+        <div class="card mt-2 mr-2 page-light darkMode-tog-p">
             <div class="card-body p-3 pt-2">
                 <div class="row">
                     <div class="col-md-3 mt-4" v-for="(shoe, index) in shoe_list" :key="index">

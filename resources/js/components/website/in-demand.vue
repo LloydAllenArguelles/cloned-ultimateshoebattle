@@ -1,5 +1,5 @@
 <template>
-    <div class="col-md-2 pr-0 sidebar" id="sidebar-scroll" style="background-color: #616161;">
+    <div class="col-md-2 pr-0 sidebar rightbar-light darkMode-tog-c" id="sidebar-scroll">
         <div class="text-center">
             <h2 class="mt-5 mb-4" style="color: white">Shoe Brands</h2>
             <ul class="mb-5 pl-0 pr-0">
@@ -12,21 +12,21 @@
         </div>
     </div>
     <div class="col-md-10">
-        <div class="card mt-2 mr-2">
+        <div class="card mt-2 mr-2 page-light darkMode-tog-p">
             <div class="card-header p-4">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-8">
-                            <h3 v-if="brand_name" class="mb-0 font-weight-bold text-roboto"> Most Popular - {{ brand_name }} </h3>
+                            <h3 v-if="brand_name" class="mb-0 font-weight-bold text-roboto text-c"> Most Popular - {{ brand_name }} </h3>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row text-c">
                         <span> As of <span class="font-weight-bold">{{ date_today }}</span></span>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="card mt-2 mr-2">
+        <div class="card mt-2 mr-2 page-light darkMode-tog-p">
             <div class="card-body p-3 pt-2">
                 <div class="row">
                     <div class="col-md-3 mt-4" v-for="(shoe, index) in shoe_list" :key="index">
