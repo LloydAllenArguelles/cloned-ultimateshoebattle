@@ -329,3 +329,7 @@ body {
     background-color: #212529;
     transition: .4s ease;
   }
+
+  .darkMode-toggle{
+    transition: background-color 0.3s ease;
+  }

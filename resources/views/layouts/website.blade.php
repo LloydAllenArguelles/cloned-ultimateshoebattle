@@ -27,9 +27,9 @@
             }
         </style>
     </head>
-    <body>
+    <body class="bg-light darkMode-toggle">
         <div id='app'>
-            <nav style="border-bottom: 2px solid white" class="navbar navbar-expand-lg navbar-light bg-light @route('dashboard') d-none @endif" id="darkMode-toggle">
+            <nav style="border-bottom: 2px solid #FAF9F8" class="navbar navbar-expand-lg navbar-light bg-light @route('dashboard') d-none @endif darkMode-toggle">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="{{ route('home') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ultimate Shoe Battle">
                         <img src="images/favicon.png" alt="" width="60" height="50">

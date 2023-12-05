@@ -33,19 +33,18 @@ app.mount('#app');
 
 document.addEventListener('DOMContentLoaded', function() {
     const darkToggle = document.getElementById('darkMode-button');
-    const navElement = document.getElementById('darkMode-toggle');
-    const bgElement = document.body;
+    const darkToggles = document.querySelectorAll('.darkMode-toggle');
 
     function setDarkMode(isDarkMode) {
-        if (isDarkMode) {
-            navElement.classList.remove('bg-light','navbar-light');
-            navElement.classList.add('bg-dark','navbar-dark');
-            bgElement.classList.add('body-color');
-        } else {
-            navElement.classList.remove('bg-dark','navbar-dark');
-            navElement.classList.add('bg-light','navbar-light');
-            bgElement.classList.remove('body-color');
-        }
+        darkToggles.forEach(navElement => {
+            if (isDarkMode) {
+                navElement.classList.remove('bg-light', 'navbar-light');
+                navElement.classList.add('bg-dark', 'navbar-dark');
+            } else {
+                navElement.classList.remove('bg-dark', 'navbar-dark');
+                navElement.classList.add('bg-light', 'navbar-light');
+            }
+        });
 
         // Store the dark mode preference in localStorage
         localStorage.setItem('darkMode', isDarkMode.toString());
