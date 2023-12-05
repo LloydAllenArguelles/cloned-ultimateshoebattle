@@ -31,7 +31,7 @@
         <div id='app'>
             <nav class="navbar navbar-expand-lg navbar-light bg-light @route('dashboard') d-none @endif" id="darkMode-toggle">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="{{ route('home') }}">
+                    <a class="navbar-brand" href="{{ route('home') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ultimate Shoe Battle">
                         <img src="images/favicon.png" alt="" width="60" height="50">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,16 +40,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                           <a class="nav-link @route('home') active-nav @endif" aria-current="page" href="{{ route('home') }}">Home</a>
+                           <a class="nav-link @route('home') active-nav @endif" aria-current="page" href="{{ route('home') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="View Home Page">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @route('main') active-nav @endif" aria-current="page" href="{{ route('main') }}">Sneakers</a>
+                            <a class="nav-link @route('main') active-nav @endif" aria-current="page" href="{{ route('main') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Explore Sneakers">Sneakers</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @route('comparison') active-nav @endif" href="{{ route('comparison') }}">Comparison</a>
+                            <a class="nav-link @route('comparison') active-nav @endif" href="{{ route('comparison') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Compare Shoes">Comparison</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle @route('most-in-demand') active-nav @elseroute('whats-hot') active-nav @endif" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle @route('most-in-demand') active-nav @elseroute('whats-hot') active-nav @endif" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="dropdown" aria-expanded="false" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Discover New Shoes">
                                 Discover
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -58,10 +58,10 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link @route('reviews') active-nav @endif" href="{{ route('reviews') }}">Reviews</a>
+                            <a class="nav-link @route('reviews') active-nav @endif" href="{{ route('reviews') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Check Web Reviews">Reviews</a>
                         </li>
                         <li class="nav-item">
-                            <label class="switch">
+                            <label class="switch" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Dark Mode">
                                 <input type="checkbox" id="darkMode-button">
                                 <span class="darkMode-toggle-button"></span>
                             </label>
