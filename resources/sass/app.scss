@@ -257,10 +257,20 @@ body {
   }
   .bottom-color {
     background-color:#31383c;
-    display:flex;
-    justify-content: center;
-    padding: 8px;
+    display: block;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow: hidden; 
+    align-content: center;
   }
+
+.bottom-color li{
+  width: auto;
+  border-right: 1px solid grey;
+  padding: 0px 15px 0px 0px;
+  margin: 15px 0px;
+}
+
   .bottom {
     color: rgb(209, 207, 207);
     display:flex;

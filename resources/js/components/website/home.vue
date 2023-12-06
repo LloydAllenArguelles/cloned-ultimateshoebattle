@@ -19,9 +19,8 @@
     </div>
 
 
-    <h1 style="text-align: center; background-color: black; padding: 5rem 0; margin: 2rem; color: white; font-size: xx-large;">Featured Sneakers</h1>
+    <h1 class="dabest" style="text-align: center; background-color: black; padding: 5rem 0; margin: 2rem; color: white; font-size: xx-large;">Featured Sneakers</h1>
 <div class="card-section">
-
     <div class="prod-header">
         <h1>  Most Popular  </h1>
     </div>
@@ -120,10 +119,16 @@
     <div class="bottom-color">
     <ul style="list-style-type: none" class="bottom">
         <li>
-            <a>All rights reserved</a>
+            <a>Duraemond</a>
         </li>
         <li>
-            <a>All rights reserved</a>
+            <a>Duraemond </a>
+        </li>
+        <li>
+            <a>Duraemond</a>
+        </li>
+        <li>
+            <a>Duraemond </a>
         </li>
     </ul>
 </div>

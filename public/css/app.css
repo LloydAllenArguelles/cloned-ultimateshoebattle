@@ -11389,11 +11389,7 @@ font-family: Cooper BT,serif;
   box-shadow: 0 .25rem 1rem rgba(0 0 0 / .1);
  }
 
- .card-section h1{
- }
-
  .prod-header h1{
-
     font-style: normal;
     line-height: 1.4;
     text-rendering: optimizeLegibility;
@@ -11493,6 +11489,7 @@ font-family: Cooper BT,serif;
     flex-wrap: wrap;    
     margin: 50px 0px;
   }
+
   .grid-container [class=col--]
   {
     float:left;
@@ -11504,15 +11501,18 @@ font-family: Cooper BT,serif;
     column-gap: 0400;
     margin: 60px; 
   }
+
   .grid-row h1{
     font-family: Cooper BT,serif;
   }
+
   .grid-row p{
   margin-bottom: 10px;
   flex-basis: 100%;
   }
 
 
+  
 
   @media screen and (min-width: 591px){
   .ProductImage-35785224749376 {
@@ -11521,8 +11521,8 @@ font-family: Cooper BT,serif;
   }
   }
 
-  @media only screen and (max-width: 912px){
 
+  @media only screen and (max-width: 912px){
     .prod-card-title {
       font-size: 1rem;
     }
@@ -11553,12 +11553,24 @@ font-family: Cooper BT,serif;
     flex-basis: 100%;
     text-align: center;
 }
-
-}
-@media only screen and (max-width: 600px){
   .home .grid-row{
-    column-count: auto;
-}
+  column-count: auto;
+  }
+
+  .prod-header{
+    align-items: center;
+    display: flex;
+  }
+  .dabest{
+    align-items: center;
+    padding: 0%;
+    display: block;
+  }
+
+  .bottom-color{
+    align-content: center;
+    display: block;
+  }
 }
 
 
@@ -11569,34 +11581,30 @@ font-family: Cooper BT,serif;
     flex-basis: 100%;
     text-align: center;
 }
-}
-@media only screen and (max-width: 420px){
   .home .grid-container{
     column-count: auto;
     margin-left: 0;
     margin-right: 0;
 }
-
-}
-@media only screen and (max-width: 420px){
   .home .grid-row{
     column-count: auto;
-  }
-    .prod-card-title {
-      font-size: 1rem;
-    }
-    .prod-card-image {
-      aspect-ratio: 1 / 1.50;
-    }
-    .prodcard{
-      aspect-ratio: 1 / 1.50;
-    }
-    .card-section{
-      padding: 1px;
-      margin: 1px;
-    }
+}
+  .prod-card-title {
+    font-size: 1rem;
+}
+  .prod-card-image {
+    aspect-ratio: 1 / 1.50;
+}
+  .prodcard{
+    aspect-ratio: 1 / 1.50;
+}
+  .card-section{
+    padding: 1px;
+    margin: 1px;
+}
 
-  }
+}
+
 
 @media only screen and (max-width: 300px){
 
