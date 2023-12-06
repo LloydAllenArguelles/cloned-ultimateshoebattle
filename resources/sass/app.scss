@@ -324,55 +324,47 @@ body {
     transform:translateX(26px);
     background-color: black;
   }
-  
-  .body-color{
-    background-color: #212529;
-    transition: .4s ease;
-  }
-  //just transitions
-  .darkMode-tog{
+  /* Shared transition for dark mode toggles */
+  .darkMode-tog,
+  .darkMode-tog-c,
+  .darkMode-tog-p {
     transition: background-color 0.3s ease;
   }
-  .darkMode-tog-c{
-    transition: background-color 0.3s ease;
-  }
-  .darkMode-tog-p{
-    transition: background-color 0.3s ease;
-  }
-  //brand bar on the right
-  .rightbar-light{
+
+  /* Brand bar on the right */
+  .rightbar-light,
+  .rightbar-dark {
     background-color: #8e8e8e;
     border-right: 2px solid #FAF9F8;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
   }
-  .rightbar-dark{
+
+  .rightbar-dark {
     background-color: #3b3b3b;
-    border-right: 2px solid #FAF9F8;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
-  //Changes color of the thingy of search box and catalog area
-  .page-light{
+  }    
+
+  /* Changes color of the thingy of search box and catalog area */
+  .page-light {
     background-color: #FAF9F8;
-    padding:1px;
+    padding: 1px;
     color: black;
   }
-  .page-dark{
+
+  .page-dark {
     background-color: #3b3b3b;
     border: 2px solid #FAF9F8;
   }
-  //Changes text color if element has text-c class and is in darkMode-tog-p
-  .page-dark .text-c {
-    color:#FAF9F8;
-  }
-  .page-light .text-c {
-    color:#3b3b3b;
+
+  /* Changes text color if element has text-c class */
+  .page-dark .text-c,
+  .bg-dark .text-c {
+    color: #FAF9F8;
   }
 
-  .bg-dark .text-c {
-    color:#FAF9F8;
-  }
+  .page-light .text-c,
   .bg-light .text-c {
-    color:#3b3b3b;
+    color: #3b3b3b;
   }
+
+        
