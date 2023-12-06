@@ -4555,9 +4555,7 @@ input[type=button].btn-block {
 
 .navbar-nav .nav-link {
   padding-right: 2rem;
-
-  transition: transform 0.3, background-color 0.3s , border-radius 0.3s;
-
+  transition: transform .2s ease-out, background-color 0.3s , border-radius 0.3s;
 }
 
 .navbar-nav .nav-link:hover {
@@ -11317,56 +11315,57 @@ font-family: Cooper BT,serif;
   font-weight: 500;
 }
 
-.welcome-button{
-    appearance: button;
-    background-color: white;
-    background-image: none;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
-    box-sizing: border-box;
-    color: black;
-    cursor: pointer;
-    display: inline-block;
-    font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    margin: 0 5px 10px 0;
-    overflow: visible;
-    padding: 12px 40px;
-    text-align: center;
-    text-transform: none;
-    touch-action: manipulation;
-    user-select: none;
-    -webkit-user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-  }
+.welcome-button {
+  appearance: button;
+  background-color: white;
+  background-image: none;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-shadow: black 4px 4px 0 0, white 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.welcome-button:focus{
+  text-decoration: none;
+}
+
+.welcome-button:hover{
+  text-decoration: none;
   
-  .welcome-button:focus {
-    text-decoration: none;
+}
+
+.welcome-button:active{
+  box-shadow: white 0 3px 5px inset;
+  outline: 0;
+}
+
+.welcome-button:not([disabled]):active {
+  box-shadow: white 2px 2px 0 0, black 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+.welcome-button {
+    padding: 12px 50px;
   }
-  
-  .welcome-button:hover {
-    text-decoration: none;
-  }
-  
-  .welcome-button:active {
-    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
-    outline: 0;
-  }
-  
-  .welcome-button:not([disabled]):active {
-    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-    transform: translate(2px, 2px);
-  }
-  
-  @media (min-width: 768px) {
-    .button{
-      padding: 12px 50px;
-    }
-  }
+}
 
 /*prod-grid*/
 @media (min-width: 60em){
@@ -11391,26 +11390,21 @@ font-family: Cooper BT,serif;
  }
 
  .card-section h1{
-  font-size: 2.42857em;
-  display: block;
-  font-weight: 700;
-  font-style: normal;
-  margin: 0 0 0.5em;
-  line-height: 1.4;
-  text-rendering: optimizeLegibility;
-  padding: 1rem 1rem;
  }
 
  .prod-header h1{
-    text-align: center;
-    font-size: 2.42857em;
-    display: block;
-    font-family: Cooper BT,serif;
-    font-weight: 700;
+
     font-style: normal;
-    margin: 0 0 0.5em;
     line-height: 1.4;
     text-rendering: optimizeLegibility;
+    background-color: black;
+    color: white;
+    width: 320px;
+    height: 75px;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    align-content: center;
   }
 
   .prod-footer h2{

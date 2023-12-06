@@ -19,12 +19,11 @@
     </div>
 
 
-
+    <h1 style="text-align: center; background-color: black; padding: 5rem 0; margin: 2rem; color: white; font-size: xx-large;">Featured Sneakers</h1>
 <div class="card-section">
-    <h1>Featured Sneakers</h1>
+
     <div class="prod-header">
         <h1>  Most Popular  </h1>
-        <hr class="hr--small">
     </div>
         <div class="prod-grid">
             <div class="prodcard stacked ">
@@ -65,7 +64,6 @@
 <div class="card-section">
     <div class="prod-header">
         <h1>  What's hot?  </h1>
-        <hr class="hr--small">
     </div>
         <div class="prod-grid">
             <div class="prodcard stacked ">
@@ -97,7 +95,6 @@
             </div>
         </div> 
     <div class="prod-footer">
-        <hr class="hr--small">
         <a class="View-popular" href="/discover-whats-hot"><h2> View all </h2></a>
     </div>    
 </div>
@@ -106,14 +103,16 @@
     <div class="grid-container">
             <div class="grid-row">
                 <div class="col--1-text">
-                    <h1>STORIES, STYLES AND SPORTSWEAR AT ADIDAS, SINCE 1949</h1>
-                    <p>Sport keeps us fit. Keeps you mindful. Brings us together. Through sport we have the power to change lives. Whether it is through stories of inspiring athletes. Helping you to get up and get moving. Sportswear featuring the latest technologies, to up your performance. Beat your PB.adidas offers a home to the runner, the basketball player, the soccer kid, the fitness enthusiast. The weekend hiker that loves to escape the city. The yoga teacher that spreads the moves. The 3-Stripes are seen in the music scene. On stage, at festivals. Our sports clothing keeps you focused before that whistle blows. During the race. And at the finish lines. We’re here to supportcreators. Improve their game. Their lives. And change the world.</p>
+                    <h1>ORIGINS OF THE TERM "Sneakers"</h1>
+                    <p>The term "sneakers" originated because the rubber soles of these shoes allowed wearers to move around silently, "sneaking" up on others. The term became popular in the late 19th century.</p>
+                    <br>
+                    <h1>Adidas and Puma Sibling Rivalry: </h1>
+                    <p>Adidas and Puma, two of the largest sportswear manufacturers, were founded by two brothers, Adolf Dassler (Adidas) and Rudolf Dassler (Puma). The brothers had a falling out, leading to the creation of the two separate companies.</p>
+                    <h1>Air Jordans</h1>
+                    <p>The partnership between Nike and basketball legend Michael Jordan resulted in the iconic Air Jordan line. The first Air Jordans were released in 1985, and the brand remains immensely popular.</p>
                     <br><br>
-                    <p>adidas is about more than sportswear and workout clothes. We partner with the best in the industry to co-create. This way we offer our fans the sports apparel and style that match their athletic needs, while keeping sustainability in mind. We’re here to support creators. Improve their game. Create change. And we think about the impact we have on our world.</p>
-                    <h1>STORIES, STYLES AND SPORTSWEAR AT ADIDAS, SINCE 1949</h1>
-                    <p>Sport keether. Through sport we have the power to change lives. Whether it is through stories of inspiring athletes. Helping you to get up and get moving. Sportswear featuring the latest technologies, to up your performance. Beat your PB.adidas offers a home to the runner, the basketball player, the soccer kid, the fitness enthusiast. The weekend hiker that loves to escape the city. The yoga teacher that spreads the moves. The 3-Stripes are seen in the music scene. On stage, at festivals. Our sports clothing keeps you focused before that whistle blows. During the race. And at the finish lines. We’re here to supportcreators. Improve their game. Their lives. And change the world.</p>
-                    <br><br>
-                    <p>aditner with the best in the industry to co-create. This way we offer our fans the sports apparel and style that match their athletic needs, while keeping sustainability in mind. We’re here to support creators. Improve their game. Create change. And we think about the impact we have on our world.</p>
+                    <h1>Nike's Swoosh Logo:</h1>
+                    <p>Introduced in 1987, Nike's Air Max technology featured visible air pockets in the shoe's sole. This design not only provided comfort but also became a style statement.</p>
                 </div>
             </div>
     </div>
