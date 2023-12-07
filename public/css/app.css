@@ -4554,9 +4554,17 @@ input[type=button].btn-block {
 }
 
 .navbar-nav .nav-link {
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: 2rem;
+  transition: transform .2s ease-out, background-color 0.3s , border-radius 0.3s;
 }
+
+.navbar-nav .nav-link:hover {
+  transform: translateY(-5px);
+  background-color: rgb(175, 175, 175);
+  border-radius: 7px;
+  font-size: 120%;
+}
+
 
 .navbar-nav .dropdown-menu {
   position: static;
@@ -4566,7 +4574,7 @@ input[type=button].btn-block {
 .navbar-text {
   display: inline-block;
   padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .navbar-collapse {
@@ -4630,8 +4638,8 @@ input[type=button].btn-block {
   }
 
   .navbar-expand-sm .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .navbar-expand-sm > .container,
@@ -11005,7 +11013,7 @@ a:focus {
 
 #sidebar ul li.active > a,
 a[aria-expanded=true] {
-  color: #fff;
+  color: #1d68a7;
   text-decoration: none;
   background: #2d4e7d;
 }
@@ -11069,8 +11077,6 @@ ul ul a {
 
 .active-nav {
   border-top: 3px solid #222222 !important;
-  margin-top: 0px !important;
-  padding-top: 0px !important;
 }
 
 .border-left {
@@ -11309,56 +11315,57 @@ font-family: Cooper BT,serif;
   font-weight: 500;
 }
 
-.welcome-button{
-    appearance: button;
-    background-color: white;
-    background-image: none;
-    border: 1px solid #000;
-    border-radius: 4px;
-    box-shadow: #fff 4px 4px 0 0,#000 4px 4px 0 1px;
-    box-sizing: border-box;
-    color: black;
-    cursor: pointer;
-    display: inline-block;
-    font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    margin: 0 5px 10px 0;
-    overflow: visible;
-    padding: 12px 40px;
-    text-align: center;
-    text-transform: none;
-    touch-action: manipulation;
-    user-select: none;
-    -webkit-user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
-  }
+.welcome-button {
+  appearance: button;
+  background-color: white;
+  background-image: none;
+  border: 1px solid white;
+  border-radius: 4px;
+  box-shadow: black 4px 4px 0 0, white 4px 4px 0 1px;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: ITCAvantGardeStd-Bk,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 0 5px 10px 0;
+  overflow: visible;
+  padding: 12px 40px;
+  text-align: center;
+  text-transform: none;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.welcome-button:focus{
+  text-decoration: none;
+}
+
+.welcome-button:hover{
+  text-decoration: none;
   
-  .welcome-button:focus {
-    text-decoration: none;
+}
+
+.welcome-button:active{
+  box-shadow: white 0 3px 5px inset;
+  outline: 0;
+}
+
+.welcome-button:not([disabled]):active {
+  box-shadow: white 2px 2px 0 0, black 2px 2px 0 1px;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+.welcome-button {
+    padding: 12px 50px;
   }
-  
-  .welcome-button:hover {
-    text-decoration: none;
-  }
-  
-  .welcome-button:active {
-    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
-    outline: 0;
-  }
-  
-  .welcome-button:not([disabled]):active {
-    box-shadow: #fff 2px 2px 0 0, #000 2px 2px 0 1px;
-    transform: translate(2px, 2px);
-  }
-  
-  @media (min-width: 768px) {
-    .button{
-      padding: 12px 50px;
-    }
-  }
+}
 
 /*prod-grid*/
 @media (min-width: 60em){
@@ -11379,29 +11386,21 @@ font-family: Cooper BT,serif;
  .card-section{
   margin: 4rem;
   background: white;
- }
-
- .card-section h1{
-  font-size: 2.42857em;
-  display: block;
-  font-weight: 700;
-  font-style: normal;
-  margin: 0 0 0.5em;
-  line-height: 1.4;
-  text-rendering: optimizeLegibility;
-  padding: 1rem 1rem;
+  box-shadow: 0 .25rem 1rem rgba(0 0 0 / .1);
  }
 
  .prod-header h1{
-    text-align: center;
-    font-size: 2.42857em;
-    display: block;
-    font-family: Cooper BT,serif;
-    font-weight: 700;
     font-style: normal;
-    margin: 0 0 0.5em;
     line-height: 1.4;
     text-rendering: optimizeLegibility;
+    background-color: black;
+    color: white;
+    width: 320px;
+    height: 75px;
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    align-content: center;
   }
 
   .prod-footer h2{
@@ -11490,6 +11489,7 @@ font-family: Cooper BT,serif;
     flex-wrap: wrap;    
     margin: 50px 0px;
   }
+
   .grid-container [class=col--]
   {
     float:left;
@@ -11501,15 +11501,18 @@ font-family: Cooper BT,serif;
     column-gap: 0400;
     margin: 60px; 
   }
+
   .grid-row h1{
     font-family: Cooper BT,serif;
   }
+
   .grid-row p{
   margin-bottom: 10px;
   flex-basis: 100%;
   }
 
 
+  
 
   @media screen and (min-width: 591px){
   .ProductImage-35785224749376 {
@@ -11518,8 +11521,8 @@ font-family: Cooper BT,serif;
   }
   }
 
-  @media only screen and (max-width: 912px){
 
+  @media only screen and (max-width: 912px){
     .prod-card-title {
       font-size: 1rem;
     }
@@ -11550,12 +11553,24 @@ font-family: Cooper BT,serif;
     flex-basis: 100%;
     text-align: center;
 }
-
-}
-@media only screen and (max-width: 600px){
   .home .grid-row{
-    column-count: auto;
-}
+  column-count: auto;
+  }
+
+  .prod-header{
+    align-items: center;
+    display: flex;
+  }
+  .dabest{
+    align-items: center;
+    padding: 0%;
+    display: block;
+  }
+
+  .bottom-color{
+    align-content: center;
+    display: block;
+  }
 }
 
 
@@ -11566,34 +11581,30 @@ font-family: Cooper BT,serif;
     flex-basis: 100%;
     text-align: center;
 }
-}
-@media only screen and (max-width: 420px){
   .home .grid-container{
     column-count: auto;
     margin-left: 0;
     margin-right: 0;
 }
-
-}
-@media only screen and (max-width: 420px){
   .home .grid-row{
     column-count: auto;
-  }
-    .prod-card-title {
-      font-size: 1rem;
-    }
-    .prod-card-image {
-      aspect-ratio: 1 / 1.50;
-    }
-    .prodcard{
-      aspect-ratio: 1 / 1.50;
-    }
-    .card-section{
-      padding: 1px;
-      margin: 1px;
-    }
+}
+  .prod-card-title {
+    font-size: 1rem;
+}
+  .prod-card-image {
+    aspect-ratio: 1 / 1.50;
+}
+  .prodcard{
+    aspect-ratio: 1 / 1.50;
+}
+  .card-section{
+    padding: 1px;
+    margin: 1px;
+}
 
-  }
+}
+
 
 @media only screen and (max-width: 300px){
 
