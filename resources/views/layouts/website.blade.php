@@ -70,9 +70,20 @@
                     </div>
                 </div>
             </nav>
+
             <div class="row">
                 @yield('content')
             </div>
+            
+                <footer>
+                    <div class="bottom-color">
+                        <ul style="list-style-type: none" class="bottom">
+                            <li>
+                                <a> All Rights Reserved </a>
+                            </li>
+                        </ul>
+                    </div>
+                </footer>
         </div>
         @vite(['resources/js/app.js'])
         @vite(['resources/sass/app.scss'])

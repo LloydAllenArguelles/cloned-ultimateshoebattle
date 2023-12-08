@@ -116,22 +116,7 @@
             </div>
     </div>
 
-    <div class="bottom-color">
-    <ul style="list-style-type: none" class="bottom">
-        <li>
-            <a>Duraemond</a>
-        </li>
-        <li>
-            <a>Duraemond </a>
-        </li>
-        <li>
-            <a>Duraemond</a>
-        </li>
-        <li>
-            <a>Duraemond </a>
-        </li>
-    </ul>
-</div>
+
 <!--End-->    
 </div>
 
