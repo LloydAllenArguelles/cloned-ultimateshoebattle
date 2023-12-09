@@ -32,6 +32,14 @@
             width: 100%; 
             }
 
+            .navbar-nav .nav-item {
+            margin-right: 25px;
+            }
+
+            .navbar-nav .nav-item:last-child {
+            margin-right: 0; 
+            }
+
         </style>
     </head>
     <body class="bg-light darkMode-tog">
@@ -39,8 +47,11 @@
         <div id='app'>
             <nav style="border-bottom: 2px solid #FAF9F8" class="navbar navbar-expand-lg navbar-light bg-light @route('dashboard') d-none @endif darkMode-tog">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="{{ route('home') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ultimate Shoe Battle">
-                        <img src="images/favicon.png" alt="" width="60" height="50">
+                    <a class="navbar-brand" href="{{ route('home') }}">
+                        <img src="images/favicon.png" alt="" width="60" height="50" id="logoBlack" class="logo">
+                        <img src="images/favicon-white.png" alt="" width="60" height="50" id="logoWhite" class="logo" style="display: none;">
+                        <img src="images/logo-text-black.png" alt="" width="140" height="80" id="other-logo-1" class="other-logo  margin-left: 10px;">
+                        <img src="images/logo-text-white.png" alt="" width="140" height="80" id="other-logo-2" class="other-logo" style="display: none; margin-left: 10px;">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

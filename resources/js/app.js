@@ -66,6 +66,24 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
+        const logoBlack = document.getElementById('logoBlack');
+    const logoWhite = document.getElementById('logoWhite');
+    const otherLogo1 = document.getElementById('other-logo-1');
+    const otherLogo2 = document.getElementById('other-logo-2');
+
+    if (isDarkMode) {
+        logoBlack.style.display = 'none';
+        logoWhite.style.display = 'block';
+        otherLogo1.style.display = 'none';
+        otherLogo2.style.display = 'block';
+    } else {
+        logoBlack.style.display = 'block';
+        logoWhite.style.display = 'none';
+        otherLogo1.style.display = 'block';
+        otherLogo2.style.display = 'none';
+    }
+
+
         // Store the dark mode preference in localStorage
         localStorage.setItem('darkMode', isDarkMode.toString());
     }
