@@ -130,7 +130,7 @@
     <!-- Rate Shoe Modal -->
     <div class="modal fade" id="rateShoe" tabindex="-1" aria-labelledby="rateShoeLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+            <div class="darkMode-tog-p modal-content text-c">
                 <div class="modal-header">
                     <h5 class="modal-title text-roboto font-weight-bold" id="rateShoeLabel"> Write a review for {{ firstLetterUp(individual_shoe.shoeName) }} </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -138,11 +138,11 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 img-border">
                                 <img :src="individual_shoe.thumbnail" class="card-img-top p-3" alt="shoes">
                             </div>
                         </div>
-                        <h4 class="text-roboto font-weight-bold mb-4"> Product Details </h4>
+                        <h4 class="text-roboto font-weight-bold mb-4 mt-4"> Product Details </h4>
                         <div class="row">
                             <div class="col-md-12">
                                 <table class="w-100">
@@ -209,20 +209,20 @@
     <!-- Check Shoe Modal -->
     <div class="modal fade" id="checkShoe" tabindex="-1" aria-labelledby="checkShoeLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
+            <div class="darkMode-tog-p modal-content">
+                <div class="modal-header text-c">
                     <h5 class="modal-title text-roboto font-weight-bold" id="checkShoeLabel"> {{ firstLetterUp(individual_shoe.shoeName) }} </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-6 offset-md-3">
+                            <div class="col-md-6 offset-md-3 img-border">
                                 <img :src="individual_shoe.thumbnail" class="card-img-top p-3" alt="shoes">
                             </div>
                         </div>
-                        <h4 class="text-roboto font-weight-bold mb-4"> Product Details </h4>
-                        <div class="row">
+                        <h4 class="text-roboto font-weight-bold mb-4 text-c"> Product Details </h4>
+                        <div class="row text-c">
                             <div class="col-md-5">
                                 <table class="w-100">
                                     <tr>
@@ -246,7 +246,7 @@
                                         <td class="font-weight-bold pb-2"> ₱ {{ usdToPhp(individual_shoe.lowestResellPrice) }} </td>
                                     </tr>
                                 </table>
-                                <div class="mt-4"> 
+                                <div class="mt-4 font-weight-bold"> 
                                     <a v-if="individual_shoe.length != 0" :href="individual_shoe.resellLinks.stockX" target="_blank"> {{ individual_shoe.resellLinks.stockX }} </a>
                                 </div>
                             </div>
@@ -255,8 +255,8 @@
                                 <p> {{ this.changeNewLine(individual_shoe.description) }} </p>
                             </div>
                         </div> 
-                        <div v-if="shoe_reviews.length != 0">
-                            <h4 class="text-roboto font-weight-bold mb-0 pt-5"> User Reviews <span class="ml-1 orange"> ★ {{ twoDecimal(average_shoe_ratings) }} </span> </h4>
+                        <div v-if="shoe_reviews.length != 0" style="">
+                            <h4 class="text-roboto font-weight-bold mb-0 pt-5 text-c"> User Reviews <span class="ml-1 orange"> ★ {{ twoDecimal(average_shoe_ratings) }} </span> </h4>
                             <span style="font-style: italic; color: gray"> Based on {{ num_reviews }} review(s) </span>
                             <div class="row mt-4">
                                 <div class="col-md-4 mb-4" v-for="(review, index) in shoe_reviews" :key="index">
