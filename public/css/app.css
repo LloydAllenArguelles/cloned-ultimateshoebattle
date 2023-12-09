@@ -11076,7 +11076,9 @@ ul ul a {
 }
 
 .active-nav {
-  border-top: 3px solid #222222 !important;
+  font-weight: 100 !important;
+  color: black;
+
 }
 
 .border-left {

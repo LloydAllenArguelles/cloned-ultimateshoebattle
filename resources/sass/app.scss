@@ -267,6 +267,7 @@ body {
 .bottom-color li{
   width: auto;
   border-right: 1px solid grey;
+  border-left: 1px solid grey;
   padding: 0px 15px 0px 0px;
   margin: 15px 0px;
 }
@@ -349,7 +350,7 @@ body {
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
   }
-
+  
   .rightbar-dark {
     background-color: #3b3b3b;
   }    
@@ -376,5 +377,11 @@ body {
   .bg-light .text-c {
     color: #3b3b3b;
   }
+
+  /* Footer CSS */
+  .footer-links{
+    align-content: center;
+  }
+  
 
         
