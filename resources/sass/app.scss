@@ -357,13 +357,13 @@ body {
 
   /* Changes color of the thingy of search box and catalog area */
   .page-light {
-    background-color: #FAF9F8;
+    background-color: #FFFFFF !important;
     padding: 1px;
     color: black;
   }
 
   .page-dark {
-    background-color: #3b3b3b;
+    background-color: #3b3b3b !important;
     border: 2px solid #FAF9F8;
   }
 
@@ -382,6 +382,22 @@ body {
   .footer-links{
     align-content: center;
   }
-  
 
-        
+  .page-light .img-border {
+    border: 4px solid #FFFFFF; 
+  }
+
+  .img-border {
+    border: 4px solid darkgray; 
+    border-radius: 15px;
+    background-color: #FFFFFF !important;
+    display: inline-block;
+    overflow: hidden;
+  }
+
+  .img-border img {
+      display: block;
+      width: 100%;
+      height: auto;
+  }
+  
