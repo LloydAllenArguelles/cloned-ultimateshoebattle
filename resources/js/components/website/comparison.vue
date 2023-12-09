@@ -118,7 +118,7 @@
     <!-- Rate Shoe Modal -->
     <div class="modal fade" id="rateShoe" tabindex="-1" aria-labelledby="rateShoeLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+            <div class="darkMode-tog-p page-light modal-content text-c">
                 <div class="modal-header">
                     <h5 class="modal-title text-roboto font-weight-bold" id="rateShoeLabel"> Write a review for {{ firstLetterUp(individual_shoe.shoeName) }} </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -126,11 +126,11 @@
                 <div class="modal-body">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 img-border">
                                 <img :src="individual_shoe.thumbnail" class="card-img-top p-3" alt="shoes">
                             </div>
                         </div>
-                        <h4 class="text-roboto font-weight-bold mb-4"> Product Details </h4>
+                        <h4 class="text-roboto font-weight-bold mb-4 mt-4"> Product Details </h4>
                         <div class="row">
                             <div class="col-md-12">
                                 <table class="w-100">
@@ -197,31 +197,31 @@
     <!-- Comparison Modal -->
     <div class="modal fade" id="compareShoe" tabindex="-1" aria-labelledby="compareShoeLabel" aria-hidden="true" style="padding-left: 0px !important">
         <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content">
-                <div class="modal-header">
+            <div class="darkMode-tog-p page-light modal-content">
+                <div class="modal-header text-c">
                     <h5 class="modal-title text-roboto font-weight-bold" id="compareShoeLabel"> Compare & Contrast </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="container" v-if="count_num == 4">
-                        <div class="row">
+                        <div class="row text-c">
                             <div class="col-md-4 p-3">
-                                <img :src="shoe_1.thumbnail" class="card-img-top p-3" alt="shoes">
-                                <h4 class="font-weight-bold text-center"> {{ firstLetterUp(shoe_1.shoeName) }} </h4>
+                                <img :src="shoe_1.thumbnail" class="card-img-top p-3 img-border" alt="shoes">
+                                <h4 class="font-weight-bold text-center mt-4"> {{ firstLetterUp(shoe_1.shoeName) }} </h4>
                             </div>
                             <div class="col-md-4">
-                                <img :src="shoe_2.thumbnail" class="card-img-top p-3" alt="shoes">
-                                <h4 class="font-weight-bold text-center"> {{ firstLetterUp(shoe_2.shoeName) }} </h4>
+                                <img :src="shoe_2.thumbnail" class="card-img-top p-3 img-border" alt="shoes">
+                                <h4 class="font-weight-bold text-center mt-4"> {{ firstLetterUp(shoe_2.shoeName) }} </h4>
                             </div>
                             <div class="col-md-4">
-                                <img :src="shoe_3.thumbnail" class="card-img-top p-3" alt="shoes">
-                                <h4 class="font-weight-bold text-center"> {{ firstLetterUp(shoe_3.shoeName) }} </h4>
+                                <img :src="shoe_3.thumbnail" class="card-img-top p-3 img-border" alt="shoes">
+                                <h4 class="font-weight-bold text-center mt-4"> {{ firstLetterUp(shoe_3.shoeName) }} </h4>
                             </div>
                         </div>
-                        <h3 class="font-weight-bold mt-5"> Summary </h3>
+                        <h3 class="font-weight-bold mt-5 text-c"> Summary </h3>
                         <hr>
                         <!-- Brand -->
-                        <div class="row ml-5">
+                        <div class="row ml-5 text-c">
                             <div class="col-md-4">
                                 <table class="w-100">
                                     <tr>
@@ -248,7 +248,7 @@
                             </div>
                         </div>
                         <!-- Colorway -->
-                        <div class="row ml-5">
+                        <div class="row ml-5 text-c">
                             <div class="col-md-4">
                                 <table class="w-100">
                                     <tr>
@@ -275,7 +275,7 @@
                             </div>
                         </div>
                         <!-- Release Date -->
-                        <div class="row ml-5">
+                        <div class="row ml-5 text-c">
                             <div class="col-md-4">
                                 <table class="w-100">
                                     <tr>
@@ -302,7 +302,7 @@
                             </div>
                         </div>
                         <!-- Retail Price -->
-                        <div class="row ml-5">
+                        <div class="row ml-5 text-c">
                             <div class="col-md-4">
                                 <table class="w-100">
                                     <tr>
@@ -329,7 +329,7 @@
                             </div>
                         </div>
                         <!-- Lowest Resell Price -->
-                        <div class="row ml-5">
+                        <div class="row ml-5 text-c">
                             <div class="col-md-4">
                                 <table class="w-100">
                                     <tr>
@@ -356,7 +356,7 @@
                             </div>
                         </div>
                         <!-- Link -->
-                        <div class="row text-center">
+                        <div class="row text-center font-weight-bold">
                             <div class="col-md-4">
                                 <div class="mt-4"> 
                                     <a v-if="shoe_1.length != 0" :href="shoe_1.resellLinks.stockX" target="_blank"> {{ shoe_1.resellLinks.stockX }} </a>
@@ -374,8 +374,8 @@
                             </div>
                         </div>
                         <!-- Reviews -->
-                        <h3 class="font-weight-bold mt-5"> User Review(s) </h3>
-                        <hr>
+                        <h3 class="font-weight-bold mt-5 text-c"> User Review(s) </h3>
+                        <hr color="white">
                         <div class="row">
                             <div class="col-md-4">
                                 <span style="font-style: italic; color: gray"> Based on {{ shoe_1_review.num_reviews }} review(s) </span> <span class="ml-1 orange ml-1" style="font-weight: 600"> ★ {{ shoe_1_review.average != null ? twoDecimal(shoe_1_review.average) : 0 }} </span>

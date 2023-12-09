@@ -130,7 +130,7 @@
     <!-- Rate Shoe Modal -->
     <div class="modal fade" id="rateShoe" tabindex="-1" aria-labelledby="rateShoeLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg">
-            <div class="darkMode-tog-p modal-content text-c">
+            <div class="darkMode-tog-p page-light modal-content text-c">
                 <div class="modal-header">
                     <h5 class="modal-title text-roboto font-weight-bold" id="rateShoeLabel"> Write a review for {{ firstLetterUp(individual_shoe.shoeName) }} </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -209,7 +209,7 @@
     <!-- Check Shoe Modal -->
     <div class="modal fade" id="checkShoe" tabindex="-1" aria-labelledby="checkShoeLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
-            <div class="darkMode-tog-p modal-content">
+            <div class="darkMode-tog-p page-light modal-content">
                 <div class="modal-header text-c">
                     <h5 class="modal-title text-roboto font-weight-bold" id="checkShoeLabel"> {{ firstLetterUp(individual_shoe.shoeName) }} </h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
