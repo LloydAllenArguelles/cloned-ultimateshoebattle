@@ -205,7 +205,7 @@
                 <div class="modal-body">
                     <div class="container" v-if="count_num == 4">
                         <div class="row text-c">
-                            <div class="col-md-4 p-3">
+                            <div class="col-md-4">
                                 <img :src="shoe_1.thumbnail" class="card-img-top p-3 img-border" alt="shoes">
                                 <h4 class="font-weight-bold text-center mt-4"> {{ firstLetterUp(shoe_1.shoeName) }} </h4>
                             </div>
@@ -218,7 +218,7 @@
                                 <h4 class="font-weight-bold text-center mt-4"> {{ firstLetterUp(shoe_3.shoeName) }} </h4>
                             </div>
                         </div>
-                        <h3 class="font-weight-bold mt-5 text-c"> Summary </h3>
+                        <h3 class="font-weight-bold text-c"> Summary </h3>
                         <hr>
                         <!-- Brand -->
                         <div class="row ml-5 text-c">
@@ -438,17 +438,17 @@
                     </div>
                     <!-- 2 comparison -->
                     <div class="container" v-else-if="count_num == 3">
-                        <div class="row">
+                        <div class="row text-c">
                             <div class="col-md-6 p-5">
-                                <img :src="shoe_1.thumbnail" class="card-img-top p-3" alt="shoes">
-                                <h4 class="font-weight-bold text-center"> {{ firstLetterUp(shoe_1.shoeName) }} </h4>
+                                <img :src="shoe_1.thumbnail" class="card-img-top p-3 img-border" alt="shoes">
+                                <h4 class="font-weight-bold text-center mt-4"> {{ firstLetterUp(shoe_1.shoeName) }} </h4>
                             </div>
                             <div class="col-md-6 p-5">
-                                <img :src="shoe_2.thumbnail" class="card-img-top p-3" alt="shoes">
-                                <h4 class="font-weight-bold text-center"> {{ firstLetterUp(shoe_2.shoeName) }} </h4>
+                                <img :src="shoe_2.thumbnail" class="card-img-top p-3 img-border" alt="shoes">
+                                <h4 class="font-weight-bold text-center mt-4"> {{ firstLetterUp(shoe_2.shoeName) }} </h4>
                             </div>
                         </div>
-                        <h3 class="font-weight-bold mt-5"> Summary </h3>
+                        <h3 class="font-weight-bold text-c"> Summary </h3>
                         <hr>
                         <!-- Brand -->
                         <div class="row ml-5 text-c">
@@ -559,9 +559,9 @@
                             </div>
                         </div>
                         <!-- Reviews -->
-                        <h3 class="font-weight-bold mt-5"> User Review(s) </h3>
+                        <h3 class="font-weight-bold mt-5 text-c"> User Review(s) </h3>
                         <hr>
-                        <div class="row text-c">
+                        <div class="row">
                             <div class="col-md-6">
                                 <span style="font-style: italic; color: gray"> Based on {{ shoe_1_review.num_reviews }} review(s) </span> <span class="ml-1 orange ml-1" style="font-weight: 600"> ★ {{ shoe_1_review.average != null ? twoDecimal(shoe_1_review.average) : 0 }} </span>
                                 <div v-if="shoe_1_review.num_reviews != 0" class="row mt-4">
