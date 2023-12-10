@@ -15,6 +15,16 @@ body {
     font-size: 3em;
 }
 
+.rightbar-dark .brand-list{
+  border: 3px solid white;
+  color: white;
+}
+.rightbar-dark .brand-list:hover, 
+.rightbar-dark .brand-list:focus {
+  background-color: white;
+  color: black;
+}
+
 .brand-list {
   letter-spacing: 3px;
   list-style-type: none;
@@ -31,6 +41,7 @@ body {
   margin-bottom: 10px;
   width: 75%;
 }
+
 @media only screen and (max-width: 1058px) and (min-width: 888px){
   .brand-list{
     font-size: 10px;
@@ -50,10 +61,6 @@ body {
   }
   
 }
-
-
-
-
 
 .brand-list:before{
   transition: 0.5s all ease;
