@@ -345,10 +345,8 @@ body {
   /* Brand bar on the right */
   .rightbar-light,
   .rightbar-dark {
-    background-color: #8e8e8e;
-    border-right: 2px solid #FAF9F8;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
+    background-color: #FAF9F8;;
+    border-radius: none;
   }
   
   .rightbar-dark {
@@ -369,12 +367,14 @@ body {
 
   /* Changes text color if element has text-c class */
   .page-dark .text-c,
-  .bg-dark .text-c {
+  .bg-dark .text-c , 
+  .rightbar-dark .text-c{
     color: #FAF9F8;
   }
 
   .page-light .text-c,
-  .bg-light .text-c {
+  .bg-light .text-c,
+  .rightbar-light .text-c{
     color: #3b3b3b;
   }
 
