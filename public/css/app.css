@@ -4555,14 +4555,15 @@ input[type=button].btn-block {
 
 .navbar-nav .nav-link {
   padding-right: 2rem;
-  transition: transform .2s ease-out, background-color 0.3s , border-radius 0.3s;
+  transition: transform .1s , background-color 0.3s , border-radius 0.3s;
+  border-radius: 7px;
 }
 
 .navbar-nav .nav-link:hover {
   transform: translateY(-5px);
   background-color: rgb(175, 175, 175);
   border-radius: 7px;
-  font-size: 120%;
+  font-size: 100%;
 }
 
 
@@ -4587,7 +4588,7 @@ input[type=button].btn-block {
   padding: 0.25rem 0.75rem;
   font-size: 1.125rem;
   line-height: 1;
-  background-color: transparent;
+  background-color: red;
   border: 1px solid transparent;
   border-radius: 0.25rem;
 }
@@ -4745,9 +4746,9 @@ input[type=button].btn-block {
     position: absolute;
   }
 
-  .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+  .navbar-expand-lg .navbar-nav .nav-link .darkmode-button{
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .navbar-expand-lg > .container,

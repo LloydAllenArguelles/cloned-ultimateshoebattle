@@ -23,7 +23,7 @@
                 /*background-color: #EEEEEE !important; */
             }
             .container-fluid a{
-                padding: 0 50px
+            padding-left: 1rem;
             }
 
             .black-bar {
@@ -50,6 +50,8 @@
                     <a class="navbar-brand" href="{{ route('home') }}">
                         <img src="images/favicon.png" alt="" width="60" height="50" id="logoBlack" class="logo">
                         <img src="images/favicon-white.png" alt="" width="60" height="50" id="logoWhite" class="logo" style="display: none;">
+                    </a> 
+                    <a class="navbar-brand" href="{{ route('home') }}">
                         <img src="images/logo-text-black.png" alt="" width="140" height="80" id="other-logo-1" class="other-logo">
                         <img src="images/logo-text-white.png" alt="" width="140" height="80" id="other-logo-2" class="other-logo" style="display: none;">
                     </a>
