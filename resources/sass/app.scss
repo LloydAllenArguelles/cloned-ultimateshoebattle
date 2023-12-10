@@ -31,12 +31,13 @@ body {
   margin-bottom: 10px;
   width: 75%;
 }
+
 @media only screen and (max-width: 1058px) and (min-width: 888px){
   .brand-list{
     font-size: 10px;
     margin: 10px 0;
   }
-  .rightbar-light .text-h2{
+  .rightbar-light .text-h2, .rightbar-dark .text-h2{
     font-size: 15px;
   }
 }
@@ -45,14 +46,11 @@ body {
     font-size: 8px;
     margin: 10px 0;
   }
-  .rightbar-light .text-h2{
+  .rightbar-light .text-h2, .rightbar-dark .text-h2{
     font-size: 15px;
   }
   
 }
-
-
-
 
 
 .brand-list:before{
