@@ -17,6 +17,7 @@ class WebsiteController extends Controller
     public function home() {
         return view('pages.website.home');
     }
+    
     public function comparison() {
         return view('pages.website.comparison');
     }
@@ -50,7 +51,9 @@ class WebsiteController extends Controller
     }
 
     public function getReviews() {
-        $reviews = Review::orderBy('created_at', 'DESC')->get();
+        $reviews = Review::orderBy('created_at', 'DESC')
+        ->limit(6)
+        ->get();
         $average = DB::table('reviews')->average('rate');
 
         return [

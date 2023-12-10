@@ -1,7 +1,7 @@
 <template>
     <div class="col-md-2 pr-0 sidebar rightbar-light darkMode-tog-c" id="sidebar-scroll">
         <div class="text-center">
-            <h2 class="mt-5 mb-4" style="color: white">Brands</h2>
+            <h2 class="mt-5 mb-4 text-c">Brands</h2>
             <ul class="mb-5 pl-0 pr-0">
                 <center>
                     <a v-for="(brand, index) in shoe_brands" :key="index" @click="searchShoeBrand(brand.name)" class="brand-anchor">
