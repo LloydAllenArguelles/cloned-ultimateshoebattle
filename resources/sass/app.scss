@@ -16,12 +16,11 @@ body {
 }
 
 .brand-list {
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  display: inline-block;
+  letter-spacing: 3px;
+  list-style-type: none;
   font-weight: bold;
   padding: 10px 5px;
-  border: 3px solid black;
+  border: 2px solid black;
   border-radius: 2px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
   color: black;
@@ -32,9 +31,30 @@ body {
   margin-bottom: 10px;
   width: 75%;
 }
-@media screen {
+@media only screen and (max-width: 1058px) and (min-width: 888px){
+  .brand-list{
+    font-size: 10px;
+    margin: 10px 0;
+  }
+  .rightbar-light .text-h2{
+    font-size: 15px;
+  }
+}
+@media only screen and (max-width: 888px) and (min-width: 767.98px){
+  .brand-list{
+    font-size: 8px;
+    margin: 10px 0;
+  }
+  .rightbar-light .text-h2{
+    font-size: 15px;
+  }
   
 }
+
+
+
+
+
 .brand-list:before{
   transition: 0.5s all ease;
   top: 0;

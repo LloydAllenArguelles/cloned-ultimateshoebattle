@@ -4,7 +4,7 @@
             <h2 class="font-weight-bold orange"> Reviews </h2>
             <hr class="reviews-hr">
             <div class="mtb-05 orange"> ★ {{ twoDecimal(average_star) }} </div>
-            <div class="sub-text"> All Reviews: {{ review_list.length }} </div>
+            <div class="sub-text"> Recent reviews: </div>
         </div>
         <div class="row pl-5 pr-5 pt-3 pb-5">
             <div class="col-md-4 mb-5" v-for="(review, index) in review_list" :key="index">

@@ -2,8 +2,8 @@
     <div class="col-md-2 pr-0 sidebar rightbar-light darkMode-tog-c" id="sidebar-scroll">
         <div class="text-center">
             <h2 class="mt-5 mb-4 text-h2 font-weight-bold">Brands</h2>
-            <ul class="mb-5 pl-0 pr-0">
-                <center>
+            <ul class="mb-5 pl-0 pr-0 ">
+                <center class="brandcontents">
                     <a v-for="(brand, index) in shoe_brands" :key="index" @click="searchShoeBrand(brand.name)" class="brand-anchor">
                         <li class="brand-list"> {{ brand.text }} </li>
                     </a>
