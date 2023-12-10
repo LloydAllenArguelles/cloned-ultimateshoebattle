@@ -11503,7 +11503,12 @@ font-family: Cooper BT,serif;
     column-count: 2;
     column-gap: 0400;
     margin: 60px; 
+    background-color: white;
+    padding: 40px;
+    box-shadow: 5px 10px 8px #888888;
+
   }
+
 
   .grid-row h1{
     font-family: Cooper BT,serif;

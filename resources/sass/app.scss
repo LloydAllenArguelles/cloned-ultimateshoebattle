@@ -345,13 +345,15 @@ body {
   /* Brand bar on the right */
   .rightbar-light,
   .rightbar-dark {
-    background-color: #FAF9F8;;
+    background-color: #ffffff;;
     border-radius: none;
   }
   
   .rightbar-dark {
-    background-color: #3b3b3b;
+    background-color: #343a40 !important;
   }    
+
+  
 
   /* Changes color of the thingy of search box and catalog area */
   .page-light {
