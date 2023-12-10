@@ -50,8 +50,8 @@
                     <a class="navbar-brand" href="{{ route('home') }}">
                         <img src="images/favicon.png" alt="" width="60" height="50" id="logoBlack" class="logo">
                         <img src="images/favicon-white.png" alt="" width="60" height="50" id="logoWhite" class="logo" style="display: none;">
-                        <img src="images/logo-text-black.png" alt="" width="140" height="80" id="other-logo-1" class="other-logo  margin-left: 10px;">
-                        <img src="images/logo-text-white.png" alt="" width="140" height="80" id="other-logo-2" class="other-logo" style="display: none; margin-left: 10px;">
+                        <img src="images/logo-text-black.png" alt="" width="140" height="80" id="other-logo-1" class="other-logo">
+                        <img src="images/logo-text-white.png" alt="" width="140" height="80" id="other-logo-2" class="other-logo" style="display: none;">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -89,7 +89,7 @@
                     </div>
                 </div>
             </nav>
-
+            
             <div class="row">
                 @yield('content')
             </div>

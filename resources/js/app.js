@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        const logoBlack = document.getElementById('logoBlack');
+    const logoBlack = document.getElementById('logoBlack');
     const logoWhite = document.getElementById('logoWhite');
     const otherLogo1 = document.getElementById('other-logo-1');
     const otherLogo2 = document.getElementById('other-logo-2');

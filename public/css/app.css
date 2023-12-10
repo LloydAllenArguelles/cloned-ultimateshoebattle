@@ -11483,10 +11483,10 @@ font-family: Cooper BT,serif;
   }
 
 
-
   /*ABOUT US*/
   .grid-container{
-    background: #b3e8ca;
+    background-image: url('about-us.png');
+    background-size: cover;
     display: flex;
     flex-wrap: wrap;    
     margin: 50px 0px;
