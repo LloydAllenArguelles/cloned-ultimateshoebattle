@@ -37,6 +37,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const darkCustom = document.querySelectorAll('.darkMode-tog-c');
     const darkPage = document.querySelectorAll('.darkMode-tog-p');
 
+    /* You can make this shorter if you just used one querySelectorAll to do the changes and just left it all to the css file doing the rest.*/
+
     function setDarkMode(isDarkMode) {
         darkToggles.forEach(navElement => {
             if (isDarkMode) {
