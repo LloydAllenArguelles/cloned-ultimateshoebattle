@@ -1,7 +1,7 @@
 <template>
     <div class="col-md-2 pr-0 rightbar-light darkMode-tog-c">
         <div class="text-center">
-            <h2 class="mt-5 mb-4" style="color: white">Brands</h2>
+            <h2 class="mt-5 mb-4  text-c">Brands</h2>
             <ul class="mb-5 pl-0 pr-0">
                 <center>
                     <a v-for="(brand, index) in shoe_brands" :key="index" @click="searchShoeBrand(brand.name)" class="brand-anchor">
@@ -451,7 +451,7 @@
                         <h3 class="font-weight-bold mt-5"> Summary </h3>
                         <hr>
                         <!-- Brand -->
-                        <div class="row ml-5">
+                        <div class="row ml-5 text-c">
                             <div class="col-md-6">
                                 <table class="w-100">
                                     <tr>
@@ -470,7 +470,7 @@
                             </div>
                         </div>
                         <!-- Colorway -->
-                        <div class="row ml-5">
+                        <div class="row ml-5 text-c">
                             <div class="col-md-6">
                                 <table class="w-100">
                                     <tr>
@@ -489,7 +489,7 @@
                             </div>
                         </div>
                         <!-- Release Date -->
-                        <div class="row ml-5">
+                        <div class="row ml-5 text-c">
                             <div class="col-md-6">
                                 <table class="w-100">
                                     <tr>
@@ -508,7 +508,7 @@
                             </div>
                         </div>
                         <!-- Retail Price -->
-                        <div class="row ml-5">
+                        <div class="row ml-5 text-c">
                             <div class="col-md-6">
                                 <table class="w-100">
                                     <tr>
@@ -527,7 +527,7 @@
                             </div>
                         </div>
                         <!-- Lowest Resell Price -->
-                        <div class="row ml-5">
+                        <div class="row ml-5 text-c">
                             <div class="col-md-6">
                                 <table class="w-100">
                                     <tr>
@@ -546,7 +546,7 @@
                             </div>
                         </div>
                         <!-- Link -->
-                        <div class="row text-center">
+                        <div class="row text-center font-weight-bold">
                             <div class="col-md-6">
                                 <div class="mt-4"> 
                                     <a v-if="shoe_1.length != 0" :href="shoe_1.resellLinks.stockX" target="_blank"> {{ shoe_1.resellLinks.stockX }} </a>
@@ -561,7 +561,7 @@
                         <!-- Reviews -->
                         <h3 class="font-weight-bold mt-5"> User Review(s) </h3>
                         <hr>
-                        <div class="row">
+                        <div class="row text-c">
                             <div class="col-md-6">
                                 <span style="font-style: italic; color: gray"> Based on {{ shoe_1_review.num_reviews }} review(s) </span> <span class="ml-1 orange ml-1" style="font-weight: 600"> ★ {{ shoe_1_review.average != null ? twoDecimal(shoe_1_review.average) : 0 }} </span>
                                 <div v-if="shoe_1_review.num_reviews != 0" class="row mt-4">
@@ -583,13 +583,13 @@
                             </div>
                             <div class="col-md-6">
                                 <span style="font-style: italic; color: gray"> Based on {{ shoe_2_review.num_reviews }} review(s) </span> <span class="ml-1 orange ml-1" style="font-weight: 600"> ★ {{ shoe_2_review.average != null ? twoDecimal(shoe_2_review.average) : 0 }} </span>
-                                <div v-if="shoe_2_review.num_reviews != 0" class="row mt-4">
-                                    <div class="col-md-6 mb-4" v-for="(review, index) in shoe_2_review.reviews" :key="index">
-                                        <div class="p-3 shadow text-center pt-4 pb-4 review-block">
-                                            <h6 class="font-weight-bold"> {{ review.name }} </h6>
-                                            <hr class="reviews-hr">
-                                            <div class="mtb-05 orange">
-                                                <span v-for="(star, index) in review.rate" :key="index"> ★ </span>
+                                <div v-if="shoe_2_review.num_reviews != 0" class="row mt-4"> 
+                                    <div class="col-md-6 mb-4" v-for="(review, index) in shoe_2_review.reviews" :key="index"> 
+                                        <div class="p-3 shadow text-center pt-4 pb-4 review-block"> 
+                                            <h6 class="font-weight-bold"> {{ review.name }} </h6> 
+                                            <hr class="reviews-hr"> 
+                                            <div class="mtb-05 orange"> 
+                                                <span v-for="(star, index) in review.rate" :key="index"> ★ </span> 
                                             </div>
                                             <div class="sub-text"> {{ fixDate(review.created_at) }} </div>
                                             <div class="pt-3 pb-4 p-2"> {{ review.review }} </div>
@@ -599,11 +599,11 @@
                                 <div v-else>
                                     <h4 class="text-roboto font-weight-bold mb-4 pt-5" style="color: gray; text-align: center"> No Review Found </h4>
                                 </div> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
+                            </div> 
+                        </div> 
+                    </div> 
+                </div> 
+                <div class="modal-footer"> 
                     <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
