@@ -79,6 +79,9 @@
                             </ul>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link @route('stats') active-nav @endif" href="{{ route('stats') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Check Brand Stats">Stats</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link @route('reviews') active-nav @endif" href="{{ route('reviews') }}" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Check Web Reviews">Reviews</a>
                         </li>
                         <li class="nav-item">

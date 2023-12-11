@@ -38,6 +38,10 @@ class WebsiteController extends Controller
         return view('pages.website.reviews');
     }
 
+    public function stats() {
+        return view('pages.website.stats');
+    }
+
     public function storeReviews(Request $request) {
         Review::create([
             'name' => $request->name,
@@ -52,7 +56,6 @@ class WebsiteController extends Controller
 
     public function getReviews() {
         $reviews = Review::orderBy('created_at', 'DESC')
-        ->limit(6)
         ->get();
         $average = DB::table('reviews')->average('rate');
 

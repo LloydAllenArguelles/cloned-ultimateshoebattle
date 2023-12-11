@@ -1,7 +1,7 @@
 <template>
-    <div class="col-md-12" style="height: 90vh; padding-top: 50px;">
-        <h1 class="text-center font-weight-bold"> Shoe Brand Sales Statistics </h1>
-        <h5 class="text-center" style="font-style: italic"> Leading footwear sales for 2022 </h5>
+    <div class="col-md-12 darkMode-tog" style="height: 90vh; padding-top: 50px;">
+        <h1 class="text-center font-weight-bold text-c"> Shoe Brand Sales Statistics </h1>
+        <h5 class="text-center text-c" style="font-style: italic"> Leading footwear sales for 2022 </h5>
         <div id="chart">
             <apexchart type="bar" height="450" :options="chartOptions" :series="series"></apexchart>
             <h5> Source: Company Filings </h5>
@@ -13,6 +13,9 @@
 #chart {
     max-width: 650px;
     margin: 35px auto;
+    background-color: white;
+    border-radius: 5px;
+    padding:15px;
 }
 </style>
 

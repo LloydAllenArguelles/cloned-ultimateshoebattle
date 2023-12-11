@@ -22,4 +22,5 @@ Route::get('/home', [WebsiteController::class, 'home'])->name('home');
 Route::get('/comparison', [WebsiteController::class, 'comparison'])->name('comparison');
 Route::get('/discover-most-popular', [WebsiteController::class, 'inDemand'])->name('most-in-demand');
 Route::get('/discover-whats-hot', [WebsiteController::class, 'mostSearched'])->name('whats-hot');
+Route::get('/stats', [WebsiteController::class, 'stats'])->name('stats');
 Route::get('/reviews', [WebsiteController::class, 'reviews'])->name('reviews');
