@@ -13,7 +13,7 @@
 #chart {
     max-width: 650px;
     margin: 35px auto;
-    background-color: white;
+    background-color: #FAF9F8;
     border-radius: 5px;
     padding:15px;
 }
